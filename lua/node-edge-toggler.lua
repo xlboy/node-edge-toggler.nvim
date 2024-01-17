@@ -51,7 +51,7 @@ local function get_recent_pos()
 end
 
 return {
-  toogle = function()
+  toggle = function()
     local recent_pos = get_recent_pos()
     if not recent_pos then return end
     vim.api.nvim_win_set_cursor(0, recent_pos)
